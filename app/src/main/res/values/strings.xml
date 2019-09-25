@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PrimerParcial</string>
+    <string name="login_name">Login</string>
+    <string name="submit_login">Submit</string>
+</resources>

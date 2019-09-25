@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/login_label"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:gravity="center"
+        android:text="@string/login_name"
+        android:textSize="36dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:layout_below="@id/login_label"
+        android:layout_marginTop="40dp"
+
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="password"
+        android:inputType="number"
+        android:layout_below="@id/name"
+        android:layout_marginTop="40dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="@string/submit_login"
+        android:layout_alignStart="@id/password"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignLeft="@id/password"
+        android:layout_alignRight="@+id/password"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        />
+
+
+</RelativeLayout>
