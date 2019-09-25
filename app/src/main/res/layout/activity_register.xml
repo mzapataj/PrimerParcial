@@ -29,35 +29,35 @@
 
         />
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_register"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="password"
+        android:hint="Password"
         android:inputType="numberPassword"
         android:layout_below="@id/username"
         android:layout_marginTop="40dp"
 
         />
     <EditText
-        android:id="@+id/repassword"
+        android:id="@+id/repassword_register"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="repassword"
+        android:hint="Password confirmation"
         android:inputType="numberPassword"
-        android:layout_below="@id/password"
+        android:layout_below="@id/password_register"
         android:layout_marginTop="40dp"
 
         />
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/accept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
+        android:layout_below="@id/repassword_register"
         android:text="@string/submit_login"
-        android:layout_alignStart="@id/password"
-        android:layout_alignEnd="@+id/password"
-        android:layout_alignLeft="@id/password"
-        android:layout_alignRight="@+id/password"
+        android:layout_alignStart="@id/password_register"
+        android:layout_alignEnd="@+id/password_register"
+        android:layout_alignLeft="@id/password_register"
+        android:layout_alignRight="@+id/password_register"
         android:gravity="center"
         android:layout_marginTop="40dp"
         />
