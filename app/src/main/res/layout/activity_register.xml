@@ -7,24 +7,24 @@
     >
 
     <TextView
-        android:id="@+id/login_label"
+        android:id="@+id/register_label"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_alignStart="@+id/name"
-        android:layout_alignEnd="@+id/name"
-        android:layout_alignRight="@+id/name"
-        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignLeft="@+id/username"
         android:gravity="center"
-        android:text="@string/login_name"
+        android:text="@string/register_name"
         android:textSize="36dp"
         />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/username"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Email"
-        android:layout_below="@id/login_label"
+        android:layout_below="@id/register_label"
         android:layout_marginTop="40dp"
 
         />
@@ -33,8 +33,18 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="password"
-        android:inputType="number"
-        android:layout_below="@id/name"
+        android:inputType="numberPassword"
+        android:layout_below="@id/username"
+        android:layout_marginTop="40dp"
+
+        />
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="repassword"
+        android:inputType="numberPassword"
+        android:layout_below="@id/password"
         android:layout_marginTop="40dp"
 
         />
@@ -50,20 +60,6 @@
         android:layout_alignRight="@+id/password"
         android:gravity="center"
         android:layout_marginTop="40dp"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/submit"
-        android:text="Register"
-        android:layout_alignStart="@id/password"
-        android:layout_alignEnd="@+id/password"
-        android:layout_alignLeft="@id/password"
-        android:layout_alignRight="@+id/password"
-        android:gravity="center"
-        android:layout_marginTop="40dp"
-        android:onClick="ToRegister"
         />
 
 

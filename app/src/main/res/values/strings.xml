@@ -2,4 +2,6 @@
     <string name="app_name">PrimerParcial</string>
     <string name="login_name">Login</string>
     <string name="submit_login">Submit</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register_name">Register</string>
 </resources>
