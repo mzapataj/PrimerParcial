@@ -4,4 +4,10 @@
     <string name="submit_login">Submit</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="register_name">Register</string>
+
+    <string name="map_title">Real-time location</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="no_data">No data</string>
+
 </resources>
