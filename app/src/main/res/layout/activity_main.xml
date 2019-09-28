@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="@string/map_title"
+        android:text="@string/last_location"
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_below="@id/map"

@@ -10,17 +10,17 @@
         android:id="@+id/login_label"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_alignStart="@+id/name"
-        android:layout_alignEnd="@+id/name"
-        android:layout_alignRight="@+id/name"
-        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignLeft="@+id/email"
         android:gravity="center"
         android:text="@string/login_name"
         android:textSize="36dp"
         />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/email"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Email"
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:hint="password"
         android:inputType="number"
-        android:layout_below="@id/name"
+        android:layout_below="@id/email"
         android:layout_marginTop="40dp"
 
         />

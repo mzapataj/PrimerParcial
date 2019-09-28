@@ -6,6 +6,7 @@
     <string name="register_name">Register</string>
 
     <string name="map_title">Real-time location</string>
+    <string name="last_location">Last location data</string>
     <string name="latitude">Latitude</string>
     <string name="longitude">Longitude</string>
     <string name="no_data">No data</string>
