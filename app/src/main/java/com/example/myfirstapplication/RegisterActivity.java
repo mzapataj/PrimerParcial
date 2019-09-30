@@ -1,14 +1,8 @@
-package com.example.primerparcial;
-
-import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+package com.example.myfirstapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import android.view.View;
+import android.os.Bundle;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -17,5 +11,4 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
     }
-
 }

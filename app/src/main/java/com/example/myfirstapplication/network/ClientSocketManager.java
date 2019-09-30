@@ -1,4 +1,4 @@
-package com.example.primerparcial.network;
+package com.example.myfirstapplication.network;
 
 import android.os.AsyncTask;
 
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class ClientSocketManager {
+public class ClientSocketManager{
 
     private String serverHost;
     private int port;
@@ -16,8 +16,7 @@ public class ClientSocketManager {
     private PrintWriter writer;
     private BufferedReader reader;
 
-    public ClientSocketManager(String serverHost, int port,
-                               ClientSocketManagerCallerInterface caller){
+    public ClientSocketManager(String serverHost, int port, ClientSocketManagerCallerInterface caller) {
         this.serverHost = serverHost;
         this.port = port;
         this.caller = caller;
@@ -28,7 +27,7 @@ public class ClientSocketManager {
             socket=new Socket(serverHost,port);
             return true;
 
-        }catch(Exception error){
+        }catch (Exception error){
             caller.ErrorFromSocketManager(error);
         }
         return false;
@@ -39,11 +38,13 @@ public class ClientSocketManager {
             writer=new PrintWriter(socket.getOutputStream(),true);
             reader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
             return true;
-        }catch(Exception error){
+
+        }catch (Exception error){
             caller.ErrorFromSocketManager(error);
         }
         return false;
     }
+
 
     public void run(){
         try{
@@ -55,7 +56,7 @@ public class ClientSocketManager {
                     }
                 }
             }
-        }catch(Exception error){
+        }catch (Exception error){
             caller.ErrorFromSocketManager(error);
         }
     }
@@ -63,23 +64,25 @@ public class ClientSocketManager {
     public void sendMessage(final String message){
         try{
             new AsyncTask<Void, Void, Void>() {
-
                 @Override
-                protected Void doInBackground(Void... voids) {
+                protected Void doInBackground( final Void ... params ) {
                     writer.write(message+"\n");
                     writer.flush();
                     return null;
                 }
 
                 @Override
-                protected void onPostExecute( final Void result) {
+                protected void onPostExecute( final Void result ) {
+                    // continue what you are doing...
+
 
                 }
             }.execute();
 
-        }catch(Exception error){
+        }catch (Exception error){
             caller.ErrorFromSocketManager(error);
         }
     }
+
 
 }

@@ -1,67 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="50dp"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
     android:gravity="center"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
     >
 
     <TextView
-        android:id="@+id/register_label"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_alignStart="@+id/username"
-        android:layout_alignEnd="@+id/username"
-        android:layout_alignRight="@+id/username"
-        android:layout_alignLeft="@+id/username"
-        android:gravity="center"
-        android:text="@string/register_name"
-        android:textSize="36dp"
+        android:text="@string/regiter_title"
+        android:textSize="34dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+
         />
 
     <EditText
-        android:id="@+id/username"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="Email"
-        android:layout_below="@id/register_label"
-        android:layout_marginTop="40dp"
-
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
         />
     <EditText
-        android:id="@+id/password_register"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="Password"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
         android:inputType="numberPassword"
-        android:layout_below="@id/username"
-        android:layout_marginTop="40dp"
-
+        android:layout_marginBottom="20dp"
         />
     <EditText
-        android:id="@+id/repassword_register"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:hint="Password confirmation"
-        android:inputType="numberPassword"
-        android:layout_below="@id/password_register"
-        android:layout_marginTop="40dp"
-
+        android:layout_height="wrap_content"
+        android:hint="@string/re_password"
+        android:layout_marginBottom="20dp"
         />
 
     <Button
-        android:id="@+id/accept"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/repassword_register"
-        android:text="@string/submit_login"
-        android:layout_alignStart="@id/password_register"
-        android:layout_alignEnd="@+id/password_register"
-        android:layout_alignLeft="@id/password_register"
-        android:layout_alignRight="@+id/password_register"
-        android:gravity="center"
-        android:layout_marginTop="40dp"
+        android:text="@string/button_register"
+        android:layout_marginBottom="20dp"
         />
 
 
-</RelativeLayout>
+
+
+</LinearLayout>

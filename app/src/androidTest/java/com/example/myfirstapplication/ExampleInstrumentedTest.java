@@ -1,4 +1,4 @@
-package com.example.primerparcial;
+package com.example.myfirstapplication;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.primerparcial", appContext.getPackageName());
+        assertEquals("com.example.myfirstapplication", appContext.getPackageName());
     }
 }

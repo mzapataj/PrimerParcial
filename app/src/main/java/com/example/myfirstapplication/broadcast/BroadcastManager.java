@@ -1,4 +1,4 @@
-package com.example.primerparcial.broadcast;
+package com.example.myfirstapplication.broadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,13 +13,11 @@ public class BroadcastManager extends BroadcastReceiver {
 
     public BroadcastManager(Context context,
                             String channel,
-                            BroadcastManagerCallerInterface caller){
-
+                            BroadcastManagerCallerInterface caller) {
         this.context = context;
         this.channel = channel;
         this.caller = caller;
         initializeBroadcast();
-
     }
 
     public void initializeBroadcast(){
@@ -27,12 +25,10 @@ public class BroadcastManager extends BroadcastReceiver {
             IntentFilter intentFilter=new IntentFilter();
             intentFilter.addAction(channel);
             context.registerReceiver(this,intentFilter);
-
-        }catch(Exception error){
+        }catch (Exception error){
             caller.ErrorAtBroadcastManager(error);
         }
     }
-
 
     public void unRegister(){
         try{
@@ -49,7 +45,6 @@ public class BroadcastManager extends BroadcastReceiver {
         caller.
                 MessageReceivedThroughBroadcastManager(
                         this.channel,type,payload);
-
     }
 
     public void sendBroadcast(String type,String message){
@@ -59,9 +54,8 @@ public class BroadcastManager extends BroadcastReceiver {
             intentToBesent.putExtra("payload",message);
             intentToBesent.putExtra("type",type);
             context.sendBroadcast(intentToBesent);
-        }catch(Exception error){
+        }catch (Exception error){
             caller.ErrorAtBroadcastManager(error);
         }
     }
-
 }

@@ -1,4 +1,4 @@
-package com.example.primerparcial;
+package com.example.myfirstapplication;
 
 import org.junit.Test;
 
