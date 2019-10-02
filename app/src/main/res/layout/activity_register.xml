@@ -22,6 +22,7 @@
         />
 
     <EditText
+        android:id="@+id/username_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/user_name"
@@ -29,6 +30,7 @@
         android:layout_marginBottom="20dp"
         />
     <EditText
+        android:id="@+id/password_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
@@ -36,9 +38,11 @@
         android:layout_marginBottom="20dp"
         />
     <EditText
+        android:id="@+id/repassword_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/re_password"
+        android:inputType="numberPassword"
         android:layout_marginBottom="20dp"
         />
 
@@ -47,6 +51,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_register"
         android:layout_marginBottom="20dp"
+        android:onClick="submitRegister"
         />
 
 

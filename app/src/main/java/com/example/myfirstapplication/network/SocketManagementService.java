@@ -25,8 +25,10 @@ public class SocketManagementService extends IntentService implements ClientSock
     ClientSocketManager clientSocketManager;
     BroadcastManager broadcastManager;
     public static String SOCKET_SERVICE_CHANNEL="com.example.myfirstapplication.SOCKET_SERVICE_CHANNEL";
+    public static String CHAT_SERVICE_CHANNEL="com.example.myfirstapplication.CHAT_SERVICE_CHANNEL";
     public static String SERVER_TO_CLIENT_MESSAGE="SERVER_TO_CLIENT_MESSAGE";
     public static String CLIENT_TO_SERVER_MESSAGE="CLIENT_TO_SERVER_MESSAGE";
+
 
 
 

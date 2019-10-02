@@ -126,11 +126,23 @@ public class MainActivity extends AppCompatActivity
                 serviceStarted=true;
             }
         });
+
+
         initializeDataBase();
         initializeGPSManager();
         initializeOSM();
         initializeBroadcastManagerForSocketIO();
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, listOfMessages);
+    }
+
+    public void sendChatMessage(View view){
+        EditText chat_edit_text =findViewById(R.id.chat_message);
+        if(!chat_edit_text.getText().toString().equals("")){
+            broadcastManagerForSocketIO.sendBroadcast(SocketManagementService.CLIENT_TO_SERVER_MESSAGE,
+                    chat_edit_text.getText().toString());
+            chat_edit_text.setText("");
+        }
+
     }
 
     public void createUser(String userName, String userEmail,String userPassword){
